@@ -142,11 +142,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Localiz.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RA Commands\lang.cs" />
     <Compile Include="RA Commands\p2ptp.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

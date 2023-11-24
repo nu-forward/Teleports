@@ -49,3 +49,13 @@ C:\Users\time2\source\repos\EBP\TeleportAPI\TeleportAPI\obj\Debug\TeleportAPI.cs
 C:\Users\time2\source\repos\EBP\TeleportAPI\TeleportAPI\obj\Debug\TeleportAPI.csproj.CopyComplete
 C:\Users\time2\source\repos\EBP\TeleportAPI\TeleportAPI\obj\Debug\TeleportAPI.dll
 C:\Users\time2\source\repos\EBP\TeleportAPI\TeleportAPI\obj\Debug\TeleportAPI.pdb
+C:\Users\time2\source\repos\TeleportAPI\bin\Debug\TeleportAPI.dll
+C:\Users\time2\source\repos\TeleportAPI\bin\Debug\TeleportAPI.pdb
+C:\Users\time2\source\repos\TeleportAPI\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\time2\source\repos\TeleportAPI\bin\Debug\System.Buffers.dll
+C:\Users\time2\source\repos\TeleportAPI\bin\Debug\System.ValueTuple.dll
+C:\Users\time2\source\repos\TeleportAPI\obj\Debug\TeleportAPI.csproj.AssemblyReference.cache
+C:\Users\time2\source\repos\TeleportAPI\obj\Debug\TeleportAPI.csproj.CoreCompileInputs.cache
+C:\Users\time2\source\repos\TeleportAPI\obj\Debug\TeleportAPI.csproj.CopyComplete
+C:\Users\time2\source\repos\TeleportAPI\obj\Debug\TeleportAPI.dll
+C:\Users\time2\source\repos\TeleportAPI\obj\Debug\TeleportAPI.pdb
