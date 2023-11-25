@@ -13,7 +13,7 @@ namespace TeleportAPI
         public override string Name => "TeleportAPI";
         public override string Author => "Timersky";
         public static Plugin api;
-        public override Version Version { get; } = new Version(4, 7, 12);
+        public override Version Version { get; } = new Version(4, 8, 13);
         public override void OnEnabled()
         {
             api = this;
