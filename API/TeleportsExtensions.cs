@@ -8,12 +8,12 @@ using UnityEngine;
 
 namespace Teleports.API
 {
-    public static class Extensions
+    public static class TeleportsExtensions
     {
         private static HashSet<Room> _rooms;
         private static HashSet<Player> _players;
 
-        static Extensions()
+        static TeleportsExtensions()
         {
             _rooms = new HashSet<Room>(100);
 
@@ -88,7 +88,7 @@ namespace Teleports.API
 
         public static void DenyAllPlayers() => _players.Clear();
 
-        public static void TeleportToRandomPlayer(Player player)
+        public static void TeleportToRandomPlayer(this Player player)
         {
             if (Player.List.Count(ply => ply != null && !ply.IsHost && !ply.IsNPC) == 1 || _players.Count(ply => ply.UserId != player.UserId) < 1)
             {
@@ -116,7 +116,7 @@ namespace Teleports.API
             player.Position = target.Position + Vector3.up;
         }
 
-        public static void TeleportToRandomRoom(Player player)
+        public static void TeleportToRandomRoom(this Player player)
         {
             Room room = Room.List.GetRandomValue();
 

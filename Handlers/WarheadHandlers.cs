@@ -7,7 +7,7 @@ namespace Teleports.Handlers
     {
         public void OnDetonated()
         {
-            Extensions.DenyAllRooms(RoomType.Surface);
+            TeleportsExtensions.DenyAllRooms(RoomType.Surface);
         }
     }
 }

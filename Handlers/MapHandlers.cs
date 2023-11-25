@@ -6,7 +6,7 @@ namespace Teleports.Handlers
 {
     internal sealed class MapHandlers
     {
-        public void OnGenerated() => Extensions.AllowAllRooms();
+        public void OnGenerated() => TeleportsExtensions.AllowAllRooms();
 
         public void OnDecontaminating(DecontaminatingEventArgs ev)
         {
@@ -15,7 +15,7 @@ namespace Teleports.Handlers
                 return;
             }
 
-            foreach (var room in Extensions.Rooms)
+            foreach (var room in TeleportsExtensions.Rooms)
             {
                 if (room == null || room.Zone != ZoneType.LightContainment)
                 {
