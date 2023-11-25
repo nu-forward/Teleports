@@ -15,7 +15,7 @@ namespace Teleports.API
 
         static Extensions()
         {
-            _rooms = new HashSet<Room>(50);
+            _rooms = new HashSet<Room>(100);
 
             _players = new HashSet<Player>(100);
         }

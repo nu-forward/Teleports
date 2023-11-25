@@ -10,13 +10,15 @@ namespace Teleports
         private PlayerHandlers _player;
         private WarheadHandlers _warhead;
 
-        public override string Prefix => "TeleportAPI";
+        public override string Prefix => "Teleports";
 
-        public override string Name => "TeleportAPI";
+        public override string Name => "Teleports";
 
-        public override string Author => "Timersky";
+        public override string Author => "Timersky & NotAloneAgain";
 
         public override Version Version { get; } = new Version(1, 0, 0);
+
+        public override Version RequiredExiledVersion { get; } = new Version(8, 4, 0);
 
         public override void OnEnabled()
         {
@@ -24,6 +26,7 @@ namespace Teleports
             _player = new();
             _warhead = new();
 
+            Map.Generated += _map.OnGenerated;
             Map.Decontaminating += _map.OnDecontaminating;
 
             Player.ChangingRole += _player.OnChangingRole;
@@ -41,6 +44,7 @@ namespace Teleports
             Player.Left -= _player.OnLeft;
             Player.ChangingRole -= _player.OnChangingRole;
 
+            Map.Generated -= _map.OnGenerated;
             Map.Decontaminating -= _map.OnDecontaminating;
 
             _map = null;
@@ -49,5 +53,11 @@ namespace Teleports
 
             base.OnDisabled();
         }
+
+        public override void OnReloaded() { }
+
+        public override void OnRegisteringCommands() { }
+
+        public override void OnUnregisteringCommands() { }
     }
 }

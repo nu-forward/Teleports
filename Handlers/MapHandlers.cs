@@ -6,6 +6,8 @@ namespace Teleports.Handlers
 {
     internal sealed class MapHandlers
     {
+        public void OnGenerated() => Extensions.AllowAllRooms();
+
         public void OnDecontaminating(DecontaminatingEventArgs ev)
         {
             if (!ev.IsAllowed)
