@@ -1,11 +1,11 @@
 ﻿using Exiled.API.Interfaces;
-using System.ComponentModel;
 
-namespace TeleportAPI
+namespace Teleports
 {
-    public class Config : IConfig
+    public sealed class Config : IConfig
     {
         public bool IsEnabled { get; set; } = true;
-        public bool Debug { get; set; } = true;
+
+        public bool Debug { get; set; } = false;
     }
 }
