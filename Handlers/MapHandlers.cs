@@ -15,7 +15,7 @@ namespace Teleports.Handlers
                 return;
             }
 
-            foreach (var room in TeleportsExtensions.Rooms)
+            foreach (var room in TeleportsExtensions.Rooms.ToHashSet())
             {
                 if (room == null || room.Zone != ZoneType.LightContainment)
                 {
