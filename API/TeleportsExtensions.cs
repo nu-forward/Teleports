@@ -147,7 +147,7 @@ namespace Teleports.API
 
         public static bool IsDangerous(this RoomType room) => room switch
         {
-            RoomType.EzShelter or RoomType.EzCollapsedTunnel or RoomType.HczTestRoom or RoomType.HczTestRoom or RoomType.Lcz173 => true,
+            RoomType.EzShelter or RoomType.EzCollapsedTunnel or RoomType.HczTestRoom or RoomType.HczTestRoom or RoomType.Lcz173 or RoomType.Lcz330 => true,
             _ => false
         };
     }
