@@ -137,7 +137,7 @@ namespace Teleports.API
 
         public static Vector3 GetSafePosition(this Room room)
         {
-            if (!room.Type.IsDangerous() && Rooms.Contains(room))
+            if (!room.Type.IsDangerous())
             {
                 return room.Position + Vector3.up * 2;
             }
@@ -147,7 +147,7 @@ namespace Teleports.API
 
         public static bool IsDangerous(this RoomType room) => room switch
         {
-            RoomType.EzShelter or RoomType.EzCollapsedTunnel or RoomType.HczTestRoom or RoomType.HczTestRoom or RoomType.Lcz173 or RoomType.Lcz330 => true,
+            RoomType.EzShelter or RoomType.EzCollapsedTunnel or RoomType.HczTestRoom or RoomType.HczTestRoom or RoomType.Lcz173 => true,
             _ => false
         };
     }
