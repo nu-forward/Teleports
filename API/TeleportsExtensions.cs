@@ -118,7 +118,7 @@ namespace Teleports.API
 
         public static void TeleportToRandomRoom(this Player player)
         {
-            Room room = Room.List.GetRandomValue();
+            Room room = Rooms.GetRandomValue();
 
             if (room == null)
             {
