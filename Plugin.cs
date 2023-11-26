@@ -16,7 +16,7 @@ namespace Teleports
 
         public override string Author => "Timersky & NotAloneAgain";
 
-        public override Version Version { get; } = new Version(5, 0, 0);
+        public override Version Version { get; } = new Version(5, 0, 1);
 
         public override Version RequiredExiledVersion { get; } = new Version(8, 4, 0);
 

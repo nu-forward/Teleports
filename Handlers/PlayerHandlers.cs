@@ -10,7 +10,7 @@ namespace Teleports.Handlers
 
         public void OnChangingRole(ChangingRoleEventArgs ev)
         {
-            if (ev.NewRole is not RoleTypeId.None and not RoleTypeId.Spectator and not RoleTypeId.Overwatch and not RoleTypeId.Tutorial and not RoleTypeId.CustomRole)
+            if (ev.NewRole is not RoleTypeId.None and not RoleTypeId.Spectator and not RoleTypeId.Overwatch and not RoleTypeId.CustomRole)
             {
                 ev.Player.AllowTeleport();
             }
