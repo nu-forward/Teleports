@@ -132,17 +132,17 @@ namespace Teleports.API
                 player.EnableEffect(EffectType.Corroding);
             }
 
-            player.Position = room.GetSafePosition();
+            player.Position = room.GetSafePosition() + Vector3.up * 2;
         }
 
         public static Vector3 GetSafePosition(this Room room)
         {
             if (!room.Type.IsDangerous())
             {
-                return room.Position + Vector3.up * 2;
+                return room.Position;
             }
 
-            return room.Doors.GetRandomValue().Position + Vector3.up * 2;
+            return room.Doors.GetRandomValue().Position;
         }
 
         public static bool IsDangerous(this RoomType room) => room switch
