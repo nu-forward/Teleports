@@ -14,7 +14,7 @@ namespace Teleports
 
         public override string Name => "Teleports";
 
-        public override string Author => "Timersky & NotAloneAgain";
+        public override string Author => "wexelsdev & NotAloneAgain";
 
         public override Version Version { get; } = new Version(5, 0, 2);
 
